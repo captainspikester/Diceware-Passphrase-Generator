@@ -71,13 +71,14 @@ while inputValid == False:
                elif i == Char:
                    Passphrase2 += Sym
                    i += 1
+           Passphrase = Passphrase2
         elif Symbol == "n":
             inputValid = True
         else:
             print("That is not a valid answer")
             continue
         inputValid = True
-Passphrase = Passphrase2
+
 print("\n",Passphrase.capitalize())
 inputValid = False
 while inputValid == False:
@@ -97,19 +98,19 @@ while inputValid == False:
                elif i == Char2:
                    Passphrase2 += str(num)
                    i += 1
+           Passphrase = Passphrase2
         elif number == "n":
             inputValid = True
         else:
             print("That is not a valid answer")
             continue
         inputValid = True
-Passphrase = Passphrase2
 print("""
 
 Here is your passphrase, please write it down and keep it somewhere safe until 
 you've memorised it, at which point you should dispose of the written version in a secure manner.
 
-                        """,Passphrase)
+                        """,Passphrase.capitalize())
 
 
 
